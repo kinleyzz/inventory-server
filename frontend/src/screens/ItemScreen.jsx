@@ -87,7 +87,7 @@ const ItemScreen = () => {
       <div className="d-flex justify-content-between align-items-center mb-3">
         <div>
           <h5 className="text-black mb-0"> Item List</h5>
-          Manage your item
+          Manage your item, hi
         </div>
         <LinkContainer to="/home/item/add-item">
           <Button variant="primary" size="sm" className="px-4 py-1">
