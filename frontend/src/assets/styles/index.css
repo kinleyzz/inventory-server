@@ -1,0 +1,139 @@
+body,
+html {
+  height: 100%;
+  margin: 0;
+}
+
+.app-container {
+  height: 100vh;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.main-content-container {
+  height: 100vh;
+  overflow-y: auto;
+}
+
+main {
+  min-height: 80vh;
+}
+
+.overflow-sidebar {
+  height: 100vh;
+  overflow-y: auto;
+}
+.product-title {
+  height: 2.5em; /* Set a fixed height */
+  overflow: hidden; /* Hide overflow content */
+  text-overflow: ellipsis; /* Add ellipsis for long text */
+  white-space: nowrap; /* Prevent wrapping */
+}
+
+/* Sidebar */
+.sidebar {
+  max-width: 250px;
+  background-color: #ffffff;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  transition: margin-left 0.4s ease;
+}
+/* .sidebar-width {
+  display: none;
+} */
+.sub-list {
+  margin: 0rem 1rem 0rem 1.4rem;
+}
+
+input.padding {
+  padding-top: 6px;
+  padding-bottom: 6px;
+  padding-right: 0px;
+  padding-left: 15px;
+}
+
+/* Breadcrumbs styling */
+.breadcrumbs > * {
+  display: inline-block;
+  margin-right: 5px;
+}
+.breadcrumbs .crumb:after {
+  content: "/";
+  margin-left: 5px;
+}
+.breadcrumbs .crumb:last-child:after {
+  display: none;
+}
+.breadcrumbs .crumb a {
+  color: #969696;
+}
+
+.react-datepicker-wrapper {
+  width: 100%;
+}
+
+/* filter button */
+button.dropdown-toggle {
+  border: none;
+}
+/* Add this style to your CSS file */
+.dropdown-menu {
+  left: auto !important;
+  right: 0 !important;
+}
+
+.clickable-cell {
+  cursor: pointer;
+
+  /* Add any additional styles as needed */
+}
+.clickable-cell:hover {
+  color: black;
+}
+
+.dropdown-toggle::after {
+  display: none !important;
+}
+
+/* Search result styles */
+.search-results {
+  width: 25%;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0px 0px 8px #ddd;
+  margin-left: 8rem;
+}
+
+.hover-cell:hover {
+  font-weight: 600;
+}
+
+/* table header styles */
+th {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 200px;
+}
+
+/* bg-color for header */
+.custom-bg-color {
+  background-color: #7d7d7d;
+}
+
+/* media query */
+
+@media screen and (max-width: 768px) {
+  .navCollapse .sidebar {
+    display: block; /* show the sidebar when the navCollapse class is applied */
+    margin-left: 0px;
+    position: fixed;
+    min-height: 100vh;
+    z-index: 1;
+  }
+
+  .navCollapse .main-content-container {
+    margin-left: 250px; /* Adjust to match sidebar width */
+  }
+}
